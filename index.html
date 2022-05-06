@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/25e9f6f78b.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body class="flex">
+    <div class="container">
+        <main>
+          <div class="weather-info">
+            <div class="weather-info-description" id="description"></div>
+            <div class="weather-info-city" id="city"></div>
+            <div class="weather-info-date" id="date"></div>
+            <div class="weather-info-date-time" id="time"></div>
+            <div class="weather-info-temperature" id="temperature"><span></span> °C</div>
+            <div class="weather-info-icon" id="icon">
+              <img src="#" alt="" id="icon-img">
+            </div>
+            <div class="search-box" id="search-box">
+              <input type="search" id="search" class="input-search" placeholder="Search Location...">
+              <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+            </div>
+            <div class="error-msg hidden" id="error-msg">Location not found.<br>
+              Search must be in the form of "City", "City, State" or "City, Country".</div>
+          </div>
+
+          <div class="weather-details">
+            <div class="weather-details-feels">
+              <div class="feels-icon">
+                <i class="fa-solid fa-temperature-three-quarters fa-2x"></i>
+              </div>
+              <div class="feels-text">
+                <p>Feels like</p>
+                <p><span id="feels-info"></span> °C</p>
+              </div>
+            </div>
+            <div class="weather-details-feels">
+              <div class="feels-icon">
+                <i class="fa-solid fa-droplet fa-2x"></i>
+              </div>
+              <div class="feels-text">
+                <p>Humidity</p>
+                <p><span id="humidity-info"></span> %</p>
+              </div>
+            </div>
+            <div class="weather-details-feels">
+              <div class="feels-icon">
+                <i class="fa-solid fa-wind fa-2x"></i>
+              </div>
+              <div class="feels-text">
+                <p>Wind Speed</p>
+                <p><span id="wind-info"></span> km/h</p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
